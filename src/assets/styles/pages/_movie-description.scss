@@ -1,0 +1,116 @@
+.home_body {
+  width: 100%;
+  padding: 130px 0 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+  gap: 30px;
+
+  .movie_description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .category_field {
+      .category_name {
+        color: $category-color;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+
+    .title_image {
+      .image {
+        width: 450px;
+
+        @media(max-width: 480px) {
+          width: 230px;
+        }
+      }
+    }
+
+    .movie_info {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .move_info {
+      color: $white;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .buttons_field {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-top: 20px;
+
+      .play_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: none;
+
+        .play_btn_name {
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .play_icon {
+          width: 20px;
+          height: auto;
+        }
+      }
+
+      .more_info_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 40px;
+        border-radius: 20px;
+        border: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        background: linear-gradient(90deg, rgba(32,36,223,1) 0%, rgba(11,26,145,1) 100%);
+      }
+
+      @media(max-width: 480px) {
+        .play_btn {
+          padding: 10px 15px;
+        }
+
+        .more_info_btn {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+
+  .cover_video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media(max-width: 480px) {
+    padding: 50px 0 0 100px,
+  }
+}

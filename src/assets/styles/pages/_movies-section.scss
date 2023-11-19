@@ -1,0 +1,25 @@
+.movies_section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .trending_now {
+    color: $white;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .movie_image {
+    width: 210px;
+    cursor: pointer;
+
+    @media(max-width: 1800px) {
+      width: 155px;
+    }
+
+    @media(max-width: 480px) {
+      width: 85px;
+    }
+  }
+}
